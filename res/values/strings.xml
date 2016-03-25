@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">3des</string>
+    <string name="secret_key">9UNfI9GE4UTSESF9fXW4et40</string>
+    <string name="secret_key1">Exr8FSx3nW3K5vcOZgw6Mb3o</string>
+    <string name="iv_param">TzeLz8sk</string>
+    
+    
+    <string name="plain">{http://ctimg.mg3721.com/upload/images/headportrait/public/system_14.png","exp":"200","gameName":"","userName":"pa51431","mobile":"18628913935","token":"AamKv0albaeLsFBE","pass":"qqqqqq","surplusExp":"101","registerTime":1453971183,"status":false,"papaMoney":200,"uid":2224443,"level":2,"gender":1}</string>
+    <string name="cipher">a12*1c中文</string>
+
+</resources>

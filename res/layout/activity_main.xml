@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3DES DEMO"
+        android:textSize="@dimen/text_size" />
+
+    <EditText
+        android:id="@+id/secret_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_space"
+        android:background="@android:color/white"
+        android:enabled="false"
+        android:hint="secret key"
+        android:text="@string/secret_key1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/iv_param"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_space"
+        android:background="@android:color/white"
+        android:hint="iv parameter"
+        android:singleLine="true"
+        android:text="@string/iv_param"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_space"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/encryptBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ENCRYPT"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:id="@+id/decryptBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DECRYPT"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/cipher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_space"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="left|top"
+            android:hint="plain text"
+            android:inputType="textMultiLine"
+            android:text="@string/plain"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_space"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="left|top"
+            android:hint="cipher text"
+            android:text="@string/cipher"
+            android:inputType="textMultiLine"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+</LinearLayout>
